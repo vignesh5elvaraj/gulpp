@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:background="@color/PrimaryColorAccent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/standard_bottom_padding"
+    android:gravity="center"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:background="@android:color/transparent"
+            android:src="@drawable/gulpp_splashimage"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:id="@+id/navigation_view_userDetailsLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/navigation_view_userName"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:text="Sample Name"
+                android:gravity="center"
+                android:textColor="@color/WhiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/navigation_view_userEmail"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/transparent"
+                android:text="Sample@gmail.com"
+                android:gravity="center"
+                android:textColor="@color/WhiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:id="@+id/navigation_view_userLogin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/navigation_view_userLogin_btn"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_roundedcorners_maroon"
+                android:text="Login"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/WhiteColor"
+                android:textSize="12dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_above="@+id/go_back_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignIn_emailAddress"
+                android:hint="Username"/>
+
+        <EditText
+               style="@style/AppTheme.GulppAppEditText"
+               android:id="@+id/userSignIn_password"
+               android:hint="Password"
+               android:password="true" />
+
+        <CheckBox
+        android:layout_margin="10dp"
+        android:id="@+id/rememberMeCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:textColor="@color/WhiteColor"
+        android:text="REMEMBER ME" />
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/userSignIn_LoginBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/WhiteColor"
+            android:textSize="18sp"
+            app:cpb_textComplete="Complete"
+            app:cpb_textError="Error"
+            app:cpb_textIdle="LOGIN"
+            app:cpb_cornerRadius="@dimen/button_corner_radius"
+            app:cpb_colorIndicator="@color/PrimaryColorAccent"
+            app:cpb_colorProgress="@color/TransparentBackground"
+            app:cpb_colorIndicatorBackground="@color/TransparentBackground"
+            app:cpb_selectorIdle="@drawable/button_state_selector_idle"
+            app:cpb_selectorError="@drawable/button_state_selector_error"
+            />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="cannot access your account ?"
+        android:textColor="@color/WhiteColor"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button" />
+
+</LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/go_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/PrimaryColorSuperDarkTransparent"
+        android:text="GO BACK"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

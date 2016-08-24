@@ -1,0 +1,59 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLoginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gulpp_splashimage"
+    tools:context="com.example.lenardgeorge.gulpp.LoginActivity">
+
+    <LinearLayout
+        android:background="@color/TransparentBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/login_logo"
+            android:src="@drawable/gulpp"/>
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:text="@string/tag_line"
+            android:textColor="@color/WhiteColor"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/avloadingIndicatorView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            app:indicator="BallPulse"
+            app:indicator_color="@color/WhiteColor"
+        />
+
+
+     <!--<com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+            <!--android:id="@+id/circularProgressBar"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cpb_background_progressbar_color="#FFCDD2"-->
+            <!--app:cpb_background_progressbar_width="5dp"-->
+            <!--app:cpb_progressbar_color="#F44336"-->
+            <!--app:cpb_progressbar_width="10dp"-->
+         <!--/>-->
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

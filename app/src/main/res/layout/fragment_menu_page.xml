@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.gulpp.android.gulppapp.fragments.MenuPageFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menuPage_recycler_view"
+        android:scrollbars="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:paddingTop="2.5dp"
+        android:paddingBottom="2.5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_height="fill_parent"/>
+
+
+
+</FrameLayout>

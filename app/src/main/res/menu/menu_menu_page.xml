@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gulpp.android.gulppapp.activity.MenuPageActivity">
+
+
+    <!--<item android:id="@+id/action_plate"-->
+          <!--android:title="@string/action_plate"-->
+          <!--android:icon="@drawable/gulpp_plate"-->
+          <!--android:orderInCategory="200"-->
+          <!--app:showAsAction="never" />-->
+
+
+    <item
+        android:id="@+id/action_plate"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:icon="@drawable/ic_action_cart"
+        app:showAsAction="ifRoom"
+        ></item>
+
+</menu>

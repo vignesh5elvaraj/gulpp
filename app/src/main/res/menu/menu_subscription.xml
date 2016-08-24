@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gulpp.android.gulppapp.activity.SubscriptionActivity">
+
+    <item
+        android:id="@+id/action_subscribed_list"
+        android:icon="@drawable/subscribed_item_list"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom"
+        android:title="Subscribed List" />
+
+
+</menu>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GulppApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_plate">Plate</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu_page">MenuPageActivity</string>
+
+
+    <!-- Menu Page-->
+    <string name="MenuPage">MENUPAGE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_item_1">Profile</string>
+    <string name="navigation_item_2">About us</string>
+    <string name="navigation_item_3">Subscription</string>
+    <string name="spinnerLocation">Select your location</string>
+
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_order_confirmation">OrderConfirmationActivity</string>
+    <string name="title_activity_subscription">SubscriptionActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_subscribed_list">SubscribedListActivity</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="tag_line">FOOD\'S READY ! ARE YOU ?</string>
+
+
+</resources>

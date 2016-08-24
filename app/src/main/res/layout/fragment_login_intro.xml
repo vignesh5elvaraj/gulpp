@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gulpp.android.gulppapp.fragments.LoginIntroFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- LOGO-->
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="80dp"
+            android:paddingBottom="40dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/login_logo"
+            android:src="@drawable/gulpp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ALMOST DONE!"-->
+            <!--android:id="@+id/textView"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@color/WhiteColor"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="WE NEED YOUR DETAILS BEFORE CHECKING OUT."-->
+            <!--android:layout_margin="@dimen/standard_margin"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@color/WhiteColor"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center_horizontal" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_height ="match_parent">
+
+          <LinearLayout
+              android:gravity="center"
+              android:layout_above="@+id/bottomBar"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <Button
+                  android:background="@drawable/facebookbutton_roundcorner"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginBottom="10dp"
+                  android:textColor="@color/WhiteColor"
+                  android:text="Login with Facebook"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+              <Button
+                  android:background="@drawable/button_roundedcorners"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:textColor="@color/WhiteColor"
+                  android:text="Login with Google"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+
+          </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/bottomBar"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="@color/PrimaryColorSuperDarkTransparent"
+                    android:layout_weight="1"
+                    android:text="LOGIN"
+                    android:textColor="@color/WhiteColor"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/loginIntro_ShowLoginBtn"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/loginIntro_ShowSigupBtn"
+                    android:background="@color/PrimaryColorSuperDarkTransparent"
+                    android:layout_weight="1"
+                    android:text="SIGN UP"
+                    android:textColor="@color/WhiteColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

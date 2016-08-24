@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="PrimaryColorSuperDark">#331316</color>
+    <color name="PrimaryColorSuperDarkTransparent">#CC331316</color>
+    <color name="PrimaryColorAccentDark">#971627</color>
+    <color name="PrimaryColorAccent">#c3373d</color>
+    <color name="WhiteColor">#fff</color>
+    <color name="TransparentBackground">#80000000</color>
+    <color name="TransparentWhitBackground">#b4ffffff</color>
+    <color name="LightGreyColor">#dedddd</color>
+    <color name="LighterGreyColor">#f1f0f0</color>
+    <color name="DarkGreyColor">#515151</color>
+    <color name="NavDrawerBGColor">#353635</color>
+    <color name="navigationBarColor">#c3373d</color>
+    <color name="facebookButtonColor">#45619D</color>
+    <color name="translucent_green">#be009342</color>
+
+</resources>

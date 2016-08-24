@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gulpp.android.gulppapp.fragments.UserInfoFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:hint="Office" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9940223344"
+            android:textColor="@android:color/black"
+            android:hint="Mobile number" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Edit info"
+        android:textColor="@color/WhiteColor"
+        android:id="@+id/userInfo_editBtn"
+        android:background="@drawable/button_roundedcorners"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save info"
+        android:textColor="@color/WhiteColor"
+        android:id="@+id/userInfo_saveBtn"
+        android:background="@drawable/button_roundedcorners"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:id="@+id/userInfo_logoutBtn"
+        android:textColor="@color/WhiteColor"
+        android:background="@drawable/button_roundedcorners_maroon"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

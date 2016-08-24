@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/PrimaryColorSuperDark</item>
+        <item name="colorPrimary">@color/PrimaryColorAccent</item>
+        <item name="colorControlNormal">@color/PrimaryColorAccentDark</item>
+        <item name="colorControlHighlight">@color/WhiteColor</item>
+        <item name="colorControlActivated">@color/PrimaryColorAccent</item>
+        <item name="editTextColor">@color/WhiteColor</item>
+
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppTheme.GulppAppDrawer" parent="Widget.Design.NavigationView">
+        <item name="android:background">@color/NavDrawerBGColor</item>
+        <item name="android:textSize">@dimen/nav_view_textSize</item>
+    </style>
+
+
+    <style name="GulppAppButton" parent="android:Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/ic_arrow_back</item>
+    </style>
+
+    <style name="AppTheme.GulppAppTextView" parent="android:Widget.TextView">
+        <item name="android:paddingLeft">@dimen/standard_left_padding</item>
+        <item name="android:paddingTop">@dimen/standard_top_padding</item>
+        <item name="android:paddingBottom">@dimen/standard_bottom_padding</item>
+        <item name="android:paddingRight">@dimen/standard_right_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.GulppAppEditText" parent="android:Widget.EditText">
+        <item name="android:layout_height">@dimen/edittext_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingLeft">@dimen/edittext_padding_left</item>
+        <item name="android:paddingTop">@dimen/edittext_padding_top</item>
+        <item name="android:paddingRight">@dimen/edittext_padding_right</item>
+        <item name="android:paddingBottom">@dimen/edittext_padding_bottom</item>
+        <item name="android:background">@drawable/edittext_roundedcorners</item>
+        <item name="android:layout_marginLeft">@dimen/activity_left_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_right_margin</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

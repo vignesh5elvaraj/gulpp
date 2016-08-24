@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cartToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/PrimaryColorAccent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_collapseMode="pin" />
+     </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/cart_nestedScrollView"
+        android:visibility="visible"
+        android:scrollbars="none"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/item_list_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPaddingBottom="8dp"
+                app:contentPaddingLeft="16dp"
+                app:contentPaddingRight="16dp"
+                app:contentPaddingTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Your items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.gulpp.android.gulppapp.customView.CustomListView
+                    android:id="@+id/cart_itemList"
+                    android:layout_marginTop="8dp"
+                    android:divider="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/cart_ClearBtn"
+                    android:text="Clear cart"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/PrimaryColorAccent"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+             </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!-- LOCATION CARD -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/flexible.example.cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPaddingBottom="16dp"
+                app:contentPaddingLeft="16dp"
+                app:contentPaddingRight="16dp"
+                app:contentPaddingTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:text="Delivery location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:prompt="@string/spinnerLocation"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cart_deliveryLocationSpinner" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- BILL AMOUNT CARD -->
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                app:contentPadding="@dimen/standard_card_padding"
+                app:cardCornerRadius="@dimen/standard_card_radius"
+                app:cardBackgroundColor="@color/PrimaryColorAccent"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Your bill"
+                    android:textColor="@color/WhiteColor"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Rs 300"
+                    android:id="@+id/cart_totalPrice"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/WhiteColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- EMPTY CART LAYOUT-->
+    <LinearLayout
+          android:id="@+id/cart_emptyCartList"
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <ImageView
+              android:src="@drawable/ic_empty_cart"
+              android:tint="@color/PrimaryColorSuperDark"
+              android:layout_width="100dp"
+              android:layout_height="100dp" />
+
+          <TextView
+              android:text="There are no Items in your cart"
+              android:textColor="@color/PrimaryColorSuperDark"
+              android:textSize="21dp"
+              android:layout_margin="@dimen/standard_margin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cartActivity_checkout_btn"
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:src="@drawable/checkout_icon"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_height="wrap_content" />
+</android.support.design.widget.CoordinatorLayout>

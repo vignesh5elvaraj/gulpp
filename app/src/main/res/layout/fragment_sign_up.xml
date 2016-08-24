@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_above="@+id/go_back_button"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:id="@+id/createNewUserLayout"
+    android:layout_height="match_parent">
+
+
+            <TextView
+               fontPath="fonts/ChampagneLimousines.ttf"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAppearance="?android:attr/textAppearanceMedium"
+               android:text="This time its personal !"
+               android:textSize="25dp"
+               android:textColor="@color/WhiteColor"
+               android:id="@+id/textView2"
+               android:layout_gravity="center_horizontal"
+               tools:ignore="MissingPrefix" />
+
+            <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignUp_firstName"
+                android:hint="Full name" />
+
+            <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignUp_emailAddress"
+                android:inputType="textEmailAddress"
+                android:hint="Email Id" />
+
+            <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignUp_mobile"
+                android:inputType="number"
+                android:hint="Phone No" />
+
+            <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignUp_password"
+                android:password="true"
+                android:hint="Password" />
+
+            <EditText
+                style="@style/AppTheme.GulppAppEditText"
+                android:id="@+id/userSignUp_confirmPassword"
+                android:password="true"
+                android:hint="Confirm password" />
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/userSignUp_createNewUserBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/WhiteColor"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        app:cpb_textIdle="SIGN UP"
+        app:cpb_textError="Oops, Try again ?"
+        app:cpb_cornerRadius="@dimen/button_corner_radius"
+        app:cpb_colorIndicator="@color/PrimaryColorAccent"
+        app:cpb_colorProgress="@color/TransparentBackground"
+        app:cpb_colorIndicatorBackground="@color/TransparentBackground"
+        app:cpb_selectorIdle="@drawable/button_state_selector_idle"
+        app:cpb_selectorError="@drawable/button_state_selector_error"
+        />
+
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryColorSuperDarkTransparent"
+        android:text="GO BACK"
+        android:id="@+id/go_back_button"
+        android:textColor="#fff" />
+
+</RelativeLayout>

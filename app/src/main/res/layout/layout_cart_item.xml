@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cartItem_count"
+                android:layout_weight="0.9"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_weight="0.9"
+                android:text="x"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/cartItem_name"
+                android:layout_weight="0.2"
+                android:text="Cart item name"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Rs 700"
+            android:textSize="15dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:id="@+id/cartItem_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.7"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/cartItem_minus"
+        android:background="@drawable/button_minus"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:text="-"
+        android:textColor="@color/WhiteColor"
+        android:textSize="30dp"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/cartItem_plus"
+        android:background="@drawable/button_plus"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:text="+"
+        android:textColor="@color/WhiteColor"
+        android:textSize="30dp"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
